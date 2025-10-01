@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+a{
+    color: #ffffff;
+}
+html{
+    background-color: #fff;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+}
+
+/* добавил отступ, чтобы контент не заходил под fixed header */
+body {
+    padding-top: 100px; /* высота шапки */
+}
+
+.container{
+    padding: 0 50px;
+    width: 100%;
+}
+header{
+    max-height: 100px;
+    background: #000000;
+    color: white;
+    position: fixed;
+    top: 0;              /* добавил, чтобы точно фиксировался сверху */
+    left: 0;
+    width: 100%;
+    margin-top: 0;
+    z-index: 1000;
+    /* чтобы шапка всегда была поверх контента */
+}
+header .container{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+    gap: 270px;
+}
+.logo{
+    width: 100px;
+}
+.menu_img{
+    width: 50px;
+}
+.general{
+    margin-top: 60px;
+    margin-bottom: 60px;
+    font-size: 30px;
+}
+.general .container img{
+    max-width: 900px;
+    width: 100%; /* Добавил для адаптивности */
+    height: auto; /* Добавил для сохранения пропорций */
+}
+.general .container{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    align-items: center; /* Добавил выравнивание по центру */
+}
+.gen-text{
+    text-align: center;
+    margin: 130px 0;
+    max-width: 600px; /* Ограничил ширину текста */
+}
+.gen-text span{
+    font-size: 43px;
+}
+.gen_img{
+    box-shadow: 0 0 20px 20px #000000;
+    max-width: 100%; /* Добавил для адаптивности */
+    height: auto; /* Добавил для сохранения пропорций */
+}
+.block{
+    background: #000000;
+    width: 850px;
+    height: auto; /* Изменил на auto для адаптивности */
+    min-height: 450px; /* Добавил минимальную высоту */
+    color: white;
+    padding: 20px;
+}
+.block1{
+    background: #fff;
+    width: 850px;
+    height: auto; /* Изменил на auto для адаптивности */
+    min-height: 450px; /* Добавил минимальную высоту */
+    border: 2px black solid;
+    color: black;
+    padding: 20px;
+}
+.boys .container{
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.boys{
+    display: flex;
+    margin-bottom: 60px;
+}
+.block1 h3{
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+.block1 div{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    text-align: center;
+    align-items: center;
+    font-size: 22px;
+    font-weight: 500;
+    flex-wrap: wrap; /* Добавил перенос элементов */
+}
+.block1 img{
+    max-width: 400px;
+    width: 100%; /* Добавил для адаптивности */
+    height: auto; /* Добавил для сохранения пропорций */
+    box-shadow: 0 0 10px 10px #000000;
+}
+.block img{
+    max-height: 350px;
+    width: 100%; /* Добавил для адаптивности */
+    height: auto; /* Добавил для сохранения пропорций */
+    max-width: 400px; /* Ограничил максимальную ширину */
+    box-shadow: 0 0 10px 10px #ffffff;
+}
+.block div{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    text-align: center;
+    align-items: center;
+    font-size: 22px;
+    font-weight: 500;
+    flex-wrap: wrap; /* Добавил перенос элементов */
+}
+.block h3{
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+.arsen_img{
+    max-height: 350px;
+    width: 100%; /* Добавил для адаптивности */
+    height: auto; /* Добавил для сохранения пропорций */
+    max-width: 400px; /* Ограничил максимальную ширину */
+    box-shadow: 0 0 10px 10px #ffffff;
+}
+.iam_img{
+    max-height: 350px;
+    width: 100%; /* Добавил для адаптивности */
+    height: auto; /* Добавил для сохранения пропорций */
+    max-width: 400px; /* Ограничил максимальную ширину */
+    box-shadow: 0 0 10px 10px #000000;
+}
+.game_img{
+    box-shadow: 0 0 20px 20px #000000;
+    max-width: 1000px;
+    width: 100%; /* Добавил для адаптивности */
+    height: auto; /* Добавил для сохранения пропорций */
+}
+.news h2{
+    font-size: 43px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.news .container{
+    display: flex;
+    gap: 40px;
+    font-size: 23px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Добавил перенос элементов */
+}
+footer{
+    margin-top: 60px;
+    max-height: 300px;
+    background: #000000;
+    color: white;
+    padding: 40px 40px;
+    text-align: center;
+}
+.footer_container{
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 300px;
+}
+
+/* 📱 Адаптив под планшеты */
+@media (max-width: 1024px) {
+    html {
+        font-size: 18px;
+    }
+
+    .container {
+        padding: 0 20px;
+    }
+
+    .menu {
+        gap: 100px;
+    }
+
+    .general .container {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px; /* Уменьшил отступ */
+    }
+
+    .general .container img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .gen-text {
+        margin: 40px 0; /* Уменьшил отступы */
+        max-width: 100%; /* Убрал ограничение ширины */
+    }
+
+    .gen-text span {
+        font-size: 36px; /* Уменьшил размер шрифта */
+    }
+
+    .block,
+    .block1 {
+        width: 100%;
+        height: auto;
+        min-height: auto; /* Убрал минимальную высоту */
+    }
+
+    .block img,
+    .block1 img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .block div,
+    .block1 div {
+        gap: 20px; /* Уменьшил отступ между элементами */
+    }
+
+    .news .container {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px; /* Уменьшил отступ */
+    }
+
+    .footer_container {
+        flex-direction: column;
+        gap: 40px;
+    }
+}
+
+/* 📱 Адаптив под телефоны */
+@media (max-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+
+    body {
+        padding-top: 140px; /* Увеличил отступ для высокой шапки */
+    }
+
+    header .container {
+        flex-direction: column;
+        justify-content: center;
+        height: auto;
+        padding: 10px 0;
+        gap: 10px; /* Добавил отступ между элементами */
+    }
+
+    .menu {
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 10px;
+    }
+
+    .logo {
+        width: 80px;
+    }
+
+    .menu_img {
+        width: 35px;
+    }
+
+    .general {
+        margin-top: 20px; /* Уменьшил отступ */
+        margin-bottom: 40px;
+        font-size: 24px; /* Уменьшил размер шрифта */
+    }
+
+    .gen-text {
+        margin: 20px 0;
+        font-size: 18px; /* Уменьшил размер шрифта */
+    }
+
+    .gen-text span {
+        font-size: 28px;
+    }
+
+    .block h3,
+    .block1 h3,
+    .news h2 {
+        font-size: 24px;
+    }
+
+    .block div,
+    .block1 div {
+        flex-direction: column;
+        gap: 20px;
+        font-size: 18px;
+        padding: 10px; /* Добавил отступ внутри контейнера */
+    }
+
+    .block,
+    .block1 {
+        padding: 15px; /* Уменьшил внутренние отступы */
+    }
+
+    .boys .container {
+        gap: 20px; /* Уменьшил отступ между блоками игроков */
+    }
+
+    .footer_container {
+        gap: 20px;
+        margin-top: 30px;
+    }
+
+    /* Специфичные исправления для очень маленьких экранов */
+    @media (max-width: 480px) {
+        .container {
+            padding: 0 10px;
+        }
+
+        .gen-text span {
+            font-size: 24px;
+        }
+
+        .block h3,
+        .block1 h3 {
+            font-size: 20px;
+        }
+
+        .block div,
+        .block1 div {
+            font-size: 16px;
+        }
+    }
+}
